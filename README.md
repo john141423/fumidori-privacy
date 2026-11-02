@@ -1,6 +1,8 @@
 # Web de la política de privacidad de Fudemaru
 
-Web estática (HTML y CSS, sin JavaScript, sin cookies, sin recursos de otros dominios) para publicar la política de privacidad de Fudemaru en GitHub Pages, gratis.
+Web estática (HTML y CSS, sin JavaScript, sin cookies, sin recursos de otros dominios) con la política de privacidad de Fudemaru.
+
+**Publicada en:** https://john141423.github.io/fudemaru-privacy/ (inglés: https://john141423.github.io/fudemaru-privacy/en/), desde el repositorio público https://github.com/john141423/fudemaru-privacy (GitHub Pages, rama `main`, carpeta raíz).
 
 ## Qué hay aquí
 
@@ -32,7 +34,18 @@ Eso vuelve a generar `index.html`, `en/index.html`, las fuentes y los iconos. Ca
 
 Los datos que faltan aparecen en la web resaltados en amarillo como **[PENDIENTE DE COMPLETAR…]**. No publiques la web hasta haberlos rellenado.
 
-## Publicarla gratis en GitHub Pages (desde el navegador, sin instalar nada)
+## Volver a publicarla después de un cambio
+
+Desde la carpeta del proyecto:
+
+1. `npm run privacidad` (regenera la web a partir de los `.md`).
+2. Guarda los cambios en git (commit).
+3. `npm run privacidad:publicar`: sube `privacy-website/` al repositorio `fudemaru-privacy` con un commit firmado como «Fudemaru <fudemaru.app@gmail.com>» (para no publicar tu correo personal). La primera vez en un ordenador nuevo, Git te pedirá iniciar sesión en GitHub en el navegador.
+4. Espera uno o dos minutos y comprueba https://john141423.github.io/fudemaru-privacy/
+
+La dirección no cambia, así que no hay que tocar la app ni Play Console.
+
+## Publicarla desde cero en otra cuenta (solo con el navegador)
 
 1. Entra en <https://github.com> e inicia sesión (o crea una cuenta gratuita).
 2. Arriba a la derecha, **+ → New repository**.
@@ -58,7 +71,7 @@ Los datos que faltan aparecen en la web resaltados en amarillo como **[PENDIENTE
 2. Ejecuta `npm run android:sync` y `npm run check`: la app mostrará «Política de privacidad» en Opciones y el aviso de `check` desaparecerá.
 3. Pega la misma dirección en Play Console → **Contenido de la app → Política de privacidad**.
 
-### Para actualizarla más adelante
+### Para actualizarla sin la línea de comandos
 
 Ejecuta `npm run privacidad`, vuelve al repositorio `fudemaru-privacy` en GitHub, pulsa **Add file → Upload files**, arrastra otra vez los archivos que hayan cambiado (normalmente `index.html` y `en/index.html`) y pulsa **Commit changes**. En uno o dos minutos la web estará actualizada.
 
