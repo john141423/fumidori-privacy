@@ -1,8 +1,8 @@
-# Web de la política de privacidad de Fudemaru
+# Web de la política de privacidad de Fumidori
 
-Web estática (HTML y CSS, sin JavaScript, sin cookies, sin recursos de otros dominios) con la política de privacidad de Fudemaru.
+Web estática (HTML y CSS, sin JavaScript, sin cookies, sin recursos de otros dominios) con la política de privacidad de Fumidori.
 
-**Publicada en:** https://john141423.github.io/fudemaru-privacy/ (inglés: https://john141423.github.io/fudemaru-privacy/en/), desde el repositorio público https://github.com/john141423/fudemaru-privacy (GitHub Pages, rama `main`, carpeta raíz).
+**Publicada en:** https://john141423.github.io/fumidori-privacy/ (inglés: https://john141423.github.io/fumidori-privacy/en/), desde el repositorio público https://github.com/john141423/fumidori-privacy (GitHub Pages, rama `main`, carpeta raíz).
 
 ## Qué hay aquí
 
@@ -12,7 +12,7 @@ Web estática (HTML y CSS, sin JavaScript, sin cookies, sin recursos de otros do
 | `en/index.html` | Política en inglés. |
 | `assets/style.css` | Diseño (crema, índigo y violeta; claro y oscuro; móvil, tableta y ordenador). |
 | `assets/fonts/` | Fuentes Zen Kaku Gothic New y Klee One recortadas a los caracteres usados, con su licencia (SIL OFL 1.1). |
-| `assets/icon-192.png`, `icon-180.png`, `favicon-32.png` | Icono de Fudemaru. |
+| `assets/icon-192.png`, `icon-180.png`, `favicon-32.png` | Icono de Fumidori. |
 | `.nojekyll` | Le dice a GitHub Pages que sirva los archivos tal cual. |
 
 Para verla en tu ordenador no hace falta instalar nada: haz doble clic en `index.html`.
@@ -40,8 +40,8 @@ Desde la carpeta del proyecto:
 
 1. `npm run privacidad` (regenera la web a partir de los `.md`).
 2. Guarda los cambios en git (commit).
-3. `npm run privacidad:publicar`: sube `privacy-website/` al repositorio `fudemaru-privacy` con un commit firmado como «Fudemaru <fudemaru.app@gmail.com>» (para no publicar tu correo personal). La primera vez en un ordenador nuevo, Git te pedirá iniciar sesión en GitHub en el navegador.
-4. Espera uno o dos minutos y comprueba https://john141423.github.io/fudemaru-privacy/
+3. `npm run privacidad:publicar`: sube `privacy-website/` al repositorio `fumidori-privacy` con un commit firmado como «Fumidori <fumidori.app@gmail.com>» (para no publicar tu correo personal). La primera vez en un ordenador nuevo, Git te pedirá iniciar sesión en GitHub en el navegador.
+4. Espera uno o dos minutos y comprueba https://john141423.github.io/fumidori-privacy/
 
 La dirección no cambia, así que no hay que tocar la app ni Play Console.
 
@@ -49,7 +49,7 @@ La dirección no cambia, así que no hay que tocar la app ni Play Console.
 
 1. Entra en <https://github.com> e inicia sesión (o crea una cuenta gratuita).
 2. Arriba a la derecha, **+ → New repository**.
-   - Repository name: `fudemaru-privacy`
+   - Repository name: `fumidori-privacy`
    - Marca **Public** (GitHub Pages gratis necesita un repositorio público).
    - Pulsa **Create repository**.
 3. En el repositorio nuevo, pulsa **uploading an existing file**.
@@ -60,20 +60,20 @@ La dirección no cambia, así que no hay que tocar la app ni Play Console.
    - Branch: **main** y carpeta **/ (root)**. Pulsa **Save**.
 7. Espera uno o dos minutos y recarga la página de Settings → Pages: aparecerá la dirección
 
-   `https://TU-USUARIO.github.io/fudemaru-privacy/`
+   `https://TU-USUARIO.github.io/fumidori-privacy/`
 
-   (con tu nombre de usuario de GitHub en minúsculas). La versión en inglés queda en `https://TU-USUARIO.github.io/fudemaru-privacy/en/`.
+   (con tu nombre de usuario de GitHub en minúsculas). La versión en inglés queda en `https://TU-USUARIO.github.io/fumidori-privacy/en/`.
 8. Abre esa dirección en el móvil y en el ordenador y comprueba que se ve bien.
 
 ### Cuando la dirección funcione
 
-1. Ponla en `package.json` del proyecto, en `"fudemaru": { "privacyUrl": "https://TU-USUARIO.github.io/fudemaru-privacy/" }`.
+1. Ponla en `package.json` del proyecto, en `"fumidori": { "privacyUrl": "https://TU-USUARIO.github.io/fumidori-privacy/" }`.
 2. Ejecuta `npm run android:sync` y `npm run check`: la app mostrará «Política de privacidad» en Opciones y el aviso de `check` desaparecerá.
 3. Pega la misma dirección en Play Console → **Contenido de la app → Política de privacidad**.
 
 ### Para actualizarla sin la línea de comandos
 
-Ejecuta `npm run privacidad`, vuelve al repositorio `fudemaru-privacy` en GitHub, pulsa **Add file → Upload files**, arrastra otra vez los archivos que hayan cambiado (normalmente `index.html` y `en/index.html`) y pulsa **Commit changes**. En uno o dos minutos la web estará actualizada.
+Ejecuta `npm run privacidad`, vuelve al repositorio `fumidori-privacy` en GitHub, pulsa **Add file → Upload files**, arrastra otra vez los archivos que hayan cambiado (normalmente `index.html` y `en/index.html`) y pulsa **Commit changes**. En uno o dos minutos la web estará actualizada.
 
 ## Privacidad de la propia web
 
